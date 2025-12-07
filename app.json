@@ -1,0 +1,64 @@
+{
+  "configVersion": "v2",
+  "app": {
+    "appId": 20051,
+    "appName": "Мой умный дом",
+    "appType": "app",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "icon": "icon.png",
+    "vender": "niks",
+    "description": "Yandex home app"
+  },
+  "permissions": ["data:os.device.info", "device:os.local_storage"],
+  "runtime": {
+    "apiVersion": {
+      "compatible": "2.0",
+      "target": "2.0",
+      "minVersion": "2.0"
+    }
+  },
+  "targets": {
+    "common": {
+      "module": {
+        "page": {
+          "pages": ["pages/splash", "pages/login", "pages/menu", "pages/scenarios", "pages/devices", "pages/device_page", "pages/settings"]
+        },
+        "app-side": {
+          "path": "app-side/index"
+        }
+      },
+      "platforms": [
+        {
+          "name": "gtr4",
+          "deviceSource": 7930112
+        },
+        {
+          "name": "gtr4-w",
+          "deviceSource": 7930113
+        },
+        {
+          "name": "gts4",
+          "deviceSource": 7995648
+        },
+        {
+          "name": "gts4-w",
+          "deviceSource": 7995649
+        },
+        {
+          "name": "Active-2",
+          "deviceSource": 10092803
+        }
+      ],
+      "designWidth": 480
+    }
+  },
+  "i18n": {
+    "en-US": {
+      "appName": "Мой умный дом"
+    }
+  },
+  "defaultLanguage": "en-US"
+}
